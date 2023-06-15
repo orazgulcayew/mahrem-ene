@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.LullabyFragment">
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:next_icon_color="@color/pink_500"
+        app:previous_icon_color="@color/pink_500"
+        app:play_icon_color="@color/pink_500"
+        app:pause_icon_color="@color/pink_500"
+        app:progress_color="@color/blue_500"
+        app:random_icon_color="@color/pink_500"
+        app:repeat_icon_color="@color/pink_500"
+        app:repeat_one_icon_color="@color/pink_500"
+        app:seek_bar_color="@color/blue_500"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/music_player_bg"
+        android:layout_margin="16dp"
+        android:id="@+id/music_player"/>
+
+</RelativeLayout>

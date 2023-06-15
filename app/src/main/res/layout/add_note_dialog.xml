@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:layout_gravity="center"
+    android:layout_marginEnd="12dp"
+    android:layout_marginStart="12dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="Bellik goş"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/dialog_sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="Häzirki ýagdaýyňyz barada bellik alyň"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ýazmaga başla..."
+        android:inputType="textMultiLine"
+        android:id="@+id/note_text"
+        android:layout_marginTop="16dp"
+        android:maxLines="12"
+        android:layout_marginBottom="16dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Bes et"
+            android:textAllCaps="false"
+            android:textColor="@color/grey_500"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/cancel_saving"
+
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:id="@+id/save_note"
+            android:text="Ýatda sakla"
+            android:textAllCaps="false"
+            android:elevation="0dp"
+            android:backgroundTint="@color/blue_500"/>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

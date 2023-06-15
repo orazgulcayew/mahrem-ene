@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "678305297302",
+    "project_id": "mahremene",
+    "storage_bucket": "mahremene.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678305297302:android:16f9a80c33debc15e563b7",
+        "android_client_info": {
+          "package_name": "com.gocreative.tm.mahrem_ene"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678305297302-fg3eim8sefqebe39cabpccgovmrgdbjs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gocreative.tm.mahrem_ene",
+            "certificate_hash": "fdf6f59989ca394b9d69fc870060d64e2f6eb0b4"
+          }
+        },
+        {
+          "client_id": "678305297302-nptkn265htaqah8pa5att3btqt3rlgsc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqgQq5OKBui_lNuOpBWmle-_qk8Xy3eAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678305297302-nptkn265htaqah8pa5att3btqt3rlgsc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

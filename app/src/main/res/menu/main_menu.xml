@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="Baş sahypa"
+            android:icon="@drawable/ic_heart"/>
+
+        <item android:id="@+id/nav_story"
+            android:title="Ertekiler"
+            android:icon="@drawable/story"/>
+
+        <item android:id="@+id/nav_lullaby"
+            android:title="Hüwdiler"
+            android:icon="@drawable/lullaby"/>
+
+        <item android:id="@+id/nav_songs"
+            android:title="Aýdymlar"
+            android:icon="@drawable/piano"/>
+
+        <item android:id="@+id/nav_notes"
+            android:title="Belliklerim"
+            android:icon="@drawable/ic_notes"/>
+
+        <item android:id="@+id/nav_shop"
+            android:title="Mährem-Ene dükany"
+            android:icon="@drawable/toy_shop"/>
+        <item android:id="@+id/nav_medicine"
+            android:title="Dermanhana"
+            android:icon="@drawable/pills"/>
+
+        <item android:id="@+id/nav_chat"
+            android:title="Lukman Chat"
+            android:icon="@drawable/ic_chat"/>
+
+    </group>
+        <item android:title="Goşmaça">
+            <menu>
+                <group android:checkableBehavior="single">
+<!--                <item android:id="@+id/nav_settings"-->
+<!--                    android:title="Sazlamalar"-->
+<!--                    android:icon="@drawable/settings"/>-->
+                <item android:id="@+id/nav_about"
+                    android:title="Programma barada"
+                    android:icon="@drawable/about_us"/>
+                </group>
+            </menu>
+        </item>
+</menu>

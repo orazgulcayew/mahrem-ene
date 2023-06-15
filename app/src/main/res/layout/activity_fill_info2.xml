@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FillInfo2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ýaşaýan salgyňyz:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Maglumatlaryňyzy dogry giriziň"
+            android:textColor="@color/grey_500"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/province"
+            android:entries="@array/provinces"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/select_city"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?selectableItemBackground">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Şäher/Etrap:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:id="@+id/selected_city"
+                android:textColor="@color/grey_500"
+                android:text="Saýlanmadyk"
+                android:drawableEnd="@drawable/ic_chevron_right"
+                android:drawableTint="@color/grey_500"
+                android:drawablePadding="8dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Öý salgyňyz"
+            android:inputType="textMultiLine"
+            android:id="@+id/address"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_100"
+            android:layout_marginTop="24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hassahana we lukmany saýlaň:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/select_hospital"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?selectableItemBackground">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Hassahana:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:id="@+id/selected_hospital"
+                android:textColor="@color/grey_500"
+                android:text="Saýlanmadyk"
+                android:drawableEnd="@drawable/ic_chevron_right"
+                android:drawableTint="@color/grey_500"
+                android:drawablePadding="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/select_family_doc"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="?selectableItemBackground">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Lukman:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:id="@+id/selected_doc"
+                android:textColor="@color/grey_500"
+                android:text="Saýlanmadyk"
+                android:drawableEnd="@drawable/ic_chevron_right"
+                android:drawableTint="@color/grey_500"
+                android:drawablePadding="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Hasaba al" />
+</RelativeLayout>

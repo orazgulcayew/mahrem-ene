@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SongFragment">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="128dp"
+        android:id="@+id/recycler_view"/>
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/music_player"
+        android:background="@drawable/music_player_bg"
+        app:next_icon_color="@color/pink_500"
+        app:pause_icon_color="@color/pink_500"
+        app:play_icon_color="@color/pink_500"
+        app:previous_icon_color="@color/pink_500"
+        app:random_icon_color="@color/pink_500"
+        app:repeat_icon_color="@color/pink_500"
+        app:repeat_one_icon_color="@color/pink_500"
+        app:progress_color="@color/blue_500"
+        android:layout_margin="16dp"
+        app:seek_bar_color="@color/pink_500"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

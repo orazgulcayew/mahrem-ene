@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/main_item_holder"
+        android:layout_marginTop="8dp"
+        android:background="?selectableItemBackground"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Music Title"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:id="@+id/music_title"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Music Artist"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/grey_500"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:id="@+id/music_artist"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/play_song"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="6dp"
+                android:src="@drawable/ic_play"
+                app:tint="@color/white" />
+            <es.claucookie.miniequalizerlibrary.EqualizerView xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/equalizer_view"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="4dp"
+                android:visibility="gone"
+                custom:foregroundColor="@color/pink_500" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/main_item_holder"
+        android:background="@color/grey_100"/>
+
+</RelativeLayout>

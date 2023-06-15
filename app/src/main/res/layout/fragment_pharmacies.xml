@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="56dp"
+    android:background="@color/grey_50"
+    android:id="@+id/main_view"
+    tools:context=".Fragments.PharmaciesFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/cart_holder"
+        android:gravity="end"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_height="60dp">
+        <FrameLayout
+            android:layout_width="60dp"
+            android:id="@+id/btn_cart"
+            android:background="?selectableItemBackground"
+            android:layout_height="60dp">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_baseline_shopping_cart_24"
+                android:layout_gravity="center"/>
+            <com.nex3z.notificationbadge.NotificationBadge
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/badge"
+                app:nbMaxTextLength="2"
+                android:layout_gravity="end"/>
+
+
+        </FrameLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/cart_holder"
+        android:layout_marginStart="16dp"
+        android:id="@+id/recycler_view"/>
+</RelativeLayout>
